@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.web.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="webview.FXMLDocumentController">
+   <children>
+      <GridPane layoutY="3.0" prefHeight="659.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="191.0" minHeight="1.0" prefHeight="13.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="605.0" minHeight="10.0" prefHeight="605.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+      </GridPane>
+      <WebView fx:id="web" layoutY="59.0" minHeight="-1.0" minWidth="-1.0" />
+      <TextField fx:id="osoiteField" layoutX="209.0" layoutY="15.0" onAction="#handleSearchAction" prefHeight="25.0" prefWidth="585.0" promptText="Osoitepalkki" />
+      <Button fx:id="refreshButton" layoutX="143.0" layoutY="15.0" mnemonicParsing="false" onAction="#handleRefreshAction" text="Refresh" />
+      <Button fx:id="käskyButton" layoutX="7.0" layoutY="3.0" mnemonicParsing="false" onAction="#handleKäskyAction" prefHeight="25.0" prefWidth="56.0" text="Käsky" />
+      <Button fx:id="alkupButton" layoutX="7.0" layoutY="29.0" mnemonicParsing="false" onAction="#handleAlkupAction" prefHeight="25.0" prefWidth="56.0" text="Alkup." />
+      <Button fx:id="edellinenButton" layoutX="74.0" layoutY="15.0" mnemonicParsing="false" onAction="#handleEdellinenAction" text="&lt;-" />
+      <Button fx:id="seuraavaButton" layoutX="104.0" layoutY="15.0" mnemonicParsing="false" onAction="#handleSeuraavaAction" text="-&gt;" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.web.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="webview.FXMLDocumentController">
+   <children>
+      <WebView fx:id="web" layoutY="59.0" minHeight="-1.0" minWidth="-1.0" prefHeight="541.0" />
+      <TextField fx:id="osoiteField" layoutX="148.0" layoutY="15.0" onAction="#handleSearchAction" prefHeight="25.0" prefWidth="640.0" promptText="Osoitepalkki" />
+      <Button fx:id="refreshButton" layoutX="85.0" layoutY="16.0" mnemonicParsing="false" onAction="#handleRefreshAction" text="Refresh" />
+      <Button fx:id="käskyButton" layoutX="7.0" layoutY="3.0" mnemonicParsing="false" onAction="#handleKäskyAction" prefHeight="25.0" prefWidth="56.0" text="Käsky" />
+      <Button fx:id="alkupButton" layoutX="7.0" layoutY="29.0" mnemonicParsing="false" onAction="#handleAlkupAction" prefHeight="25.0" prefWidth="56.0" text="Alkup." />
+   </children>
+</AnchorPane>
