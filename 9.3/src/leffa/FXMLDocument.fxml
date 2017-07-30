@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="460.0" prefWidth="484.0" style="-fx-background-color: Black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="leffa.FXMLDocumentController">
+    <children>
+        <Button fx:id="listausButton" layoutX="138.0" layoutY="174.0" onAction="#handleListausAction" style="-fx-background-color: yellow;" text="Listaa elokuvat" />
+      <Text fill="#eeff00" layoutX="14.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Alkamisväli:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fill="#f1f700" layoutX="10.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Valitse teatteri:" wrappingWidth="150.13671875">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fill="#f6ff00" layoutX="11.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Finnkinon elokuvat" underline="true" wrappingWidth="239.13671875">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Button fx:id="hakuButton" layoutX="391.0" layoutY="211.0" onAction="#handleHakuAction" prefHeight="25.0" prefWidth="79.0" style="-fx-background-color: yellow;" text="Nimihaku" />
+      <Text fill="#fffd00" layoutX="14.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tai hae elokuvan nimellä:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="päiväField" layoutX="250.0" layoutY="72.0" prefHeight="25.0" prefWidth="220.0" promptText="Esityspäivä" style="-fx-background-color: yellow;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="alkuField" layoutX="13.0" layoutY="132.0" prefHeight="25.0" prefWidth="220.0" promptText="Alkamisaika" style="-fx-background-color: yellow;" />
+      <TextField fx:id="päättymisField" layoutX="250.0" layoutY="132.0" prefHeight="25.0" prefWidth="220.0" promptText="Päättymisaika" style="-fx-background-color: yellow;" />
+      <TextField fx:id="nimiField" layoutX="181.0" layoutY="211.0" prefHeight="25.0" prefWidth="200.0" promptText="Anna elokuvan nimi" style="-fx-background-color: yellow;" />
+      <TextArea fx:id="textArea" layoutX="14.0" layoutY="246.0" prefHeight="200.0" prefWidth="457.0" />
+      <ComboBox fx:id="comboBox" layoutX="13.0" layoutY="75.0" prefHeight="25.0" prefWidth="220.0" style="-fx-background-color: yellow;" />
+    </children>
+</AnchorPane>

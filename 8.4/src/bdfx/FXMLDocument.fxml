@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="430.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bdfx.FXMLDocumentController">
+   <children>
+      <Button layoutX="52.0" layoutY="365.0" mnemonicParsing="false" onAction="#handleLisausButtonAction" prefHeight="51.0" prefWidth="260.0" text="Lisää rahaa">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="326.0" layoutY="365.0" mnemonicParsing="false" onAction="#handleOstoButtonAction" prefHeight="51.0" prefWidth="260.0" text="Osta limu">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="86.0" layoutY="65.0" mnemonicParsing="false" onAction="#handleUlostusButtonAction" prefHeight="25.0" prefWidth="96.0" text="Ota rahat ulos" />
+      <Label fx:id="rahaLabel" alignment="CENTER" layoutX="14.0" layoutY="14.0" prefHeight="51.0" prefWidth="239.0" text="0.00€">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="limsaInput" layoutX="52.0" layoutY="330.0" prefHeight="25.0" prefWidth="201.0" promptText="Numero" />
+      <TextArea fx:id="infoLabel" editable="false" layoutX="261.0" layoutY="14.0" prefHeight="340.0" prefWidth="325.0" text="Tervetuloa käyttämään limuautomaattia!" wrapText="true">
+         <font>
+            <Font size="18.0" />
+         </font></TextArea>
+   </children>
+</AnchorPane>

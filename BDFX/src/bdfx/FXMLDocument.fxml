@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="430.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bdfx.FXMLDocumentController">
+   <children>
+      <Button layoutX="52.0" layoutY="365.0" mnemonicParsing="false" onAction="#handleLisausButtonAction" prefHeight="51.0" prefWidth="260.0" text="Lisää rahaa">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="326.0" layoutY="365.0" mnemonicParsing="false" onAction="#handleOstoButtonAction" prefHeight="51.0" prefWidth="260.0" text="Osta limu">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="86.0" layoutY="65.0" mnemonicParsing="false" onAction="#handleUlostusButtonAction" prefHeight="25.0" prefWidth="96.0" text="Ota rahat ulos" />
+      <Label fx:id="rahaLabel" alignment="CENTER" layoutX="14.0" layoutY="14.0" prefHeight="51.0" prefWidth="239.0" text="0.0€">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="infoLabel" editable="false" layoutX="261.0" layoutY="14.0" prefHeight="340.0" prefWidth="325.0" wrapText="true">
+         <font>
+            <Font size="18.0" />
+         </font></TextArea>
+      <Slider fx:id="rahaSlider" blockIncrement="0.1" layoutX="14.0" layoutY="332.0" majorTickUnit="1.0" max="4.0" orientation="VERTICAL" prefHeight="84.0" prefWidth="14.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" />
+      <Text layoutX="33.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Limu">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="32.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Koko">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <ChoiceBox fx:id="limuChoice" layoutX="86.0" layoutY="193.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="kokoChoice" layoutX="86.0" layoutY="227.0" prefWidth="150.0" />
+      <Button fx:id="kuittiButton" layoutX="86.0" layoutY="97.0" mnemonicParsing="false" onAction="#kuittiButtonAction" prefHeight="25.0" prefWidth="96.0" text="Tulosta kuitti" />
+   </children>
+</AnchorPane>
